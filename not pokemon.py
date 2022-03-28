@@ -30,12 +30,14 @@ def intro():
     type_message("Myself… I study Pokémon as a profession.")
     time.sleep(0.5)
     type_message("First, what is your name?")
+    global name
     name = input(">>> ")
     type_message("Right! So your name is " + name + "!")
     time.sleep(0.5)
     type_message("This is my great grandson. He's been your rival since you were a baby.")
     time.sleep(0.5)
     type_message("…Erm, what is his name again?")
+    global rival
     rival = input(">>> ")
     type_message("That's right! I remember now! His name is " + rival + "!")
     time.sleep(0.5)
@@ -44,17 +46,32 @@ def intro():
     type_message("I mean- " + name + "! Your very own Pokémon legend is about to unfold!")
     time.sleep(0.5)
     type_message("A world of dreams and adventures with Pokémon awaits! Let's go!")
-
-
-def home_start():
-    type_message("Location: Home")
     time.sleep(0.5)
-    type_message("Options:")
-    type_message("(1) Read Oak's note.")
-    type_message("(2) Exit home.")
-    home_start = input(">>> ")
-    if home_start == "1":
-        type_message("")
+    print("")
+    type_message("PRESS ANY KEY TO CONTINUE")
+    finish_intro = input("")
+    if finish_intro == "":
+        starter()
+    else:
+        starter()
+
+
+def starter():
+    type_message("Hello again, " + name + ". You are ready to receive your first Pokémon.")
+    time.sleep(0.5)
+    type_message("Please follow me this way.")
+    time.sleep(0.5)
+    type_message("...")
+    time.sleep(0.5)
+    type_message(name + ", these Pokémon are extremely rare. Please make your choice carefully.")
+    time.sleep(0.5)
+    print("")
+    type_message("(1) Bulbasaur, the Seed Pokémon")
+    time.sleep(0.5)
+    type_message("(2) Torchic, the Chick Pokémon")
+    time.sleep(0.5)
+    type_message("(3) Froakie, the Bubble Frog Pokémon")
+    print("")
 
 
 # Titlescreen
@@ -66,7 +83,7 @@ def titlescreen():
      |_| \___/_\_\___|_|_|_\___/_||_| |_|  \_, |\__|_||_\___/_||_|   \_/\___|_| /__/_\___/_||_|
                                            |__/
     
-                                        PRESS START''')
+                                        PRESS ENTER''')
     start = input("")
     if start == "":
         print('''
