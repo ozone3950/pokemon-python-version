@@ -40,7 +40,7 @@ def titlescreen():
 
 # Introduction to the game
 def intro():
-    type_message("Proffessor Oak:")
+    type_message("Professor Oak:")
     type_message("*coughs* \"Oh- Hello there! Welcome to the world of Pokémon!\"")
     time.sleep(0.5)
     type_message("\"My name is Oak! People call me the Pokémon Professor!\"")
@@ -128,7 +128,7 @@ def starterinput():
     starterconfirm = input(">>> ")
     if starterconfirm == "y":
         type_message("You recieved " + pokemon + "!")
-        type_message("Proffessor Oak:")
+        type_message("Professor Oak:")
         type_message("\"Good choice, " + name + ". " + pokemon + " will be a great partner.\"")
         rivalscene()
         return
@@ -148,7 +148,7 @@ def rivalscene():
     time.sleep(0.5)
     type_message("\"Wait, how come " + name + " got a Pokémon before me?\"")
     time.sleep(0.5)
-    type_message("Proffesor Oak:")
+    type_message("Professor Oak:")
     type_message("\"Well " + rival + ", " + name + " showed up on time.\"")
     time.sleep(0.5)
     type_message("\"In that case, I have the chance to get the type advantage!\"")
