@@ -13,6 +13,69 @@ def type_message(message):
 
 hp = 16
 
+bag = {}
+
+Bulbasaur_moves = {
+    "move_1": ["Growl", "ATK_LWR_1", "Normal", "N/A"]
+    "move_2": ["Tackle", 40, "Normal", "Physical"]
+    "move_3": ["Vine Whip", 45, "Grass", "Physical"]
+    }
+
+Torchic_moves = {
+    "move_1": ["Growl", "ATK_LWR_1", "Normal", "N/A"]
+    "move_2": ["Scratch", 40, "Normal", "Physical"]
+    "move_3": ["Ember", 40, "Fire", "Special"]
+    }
+
+Froakie_move = {
+    "move_1": ["Growl", "ATK_LWR_1", "Normal", "N/A"]
+    "move_2": ["Pound", 40, "Normal", "Physical"]
+    "move_3": ["Bubble", 40, "Water", "Special"]
+    }
+
+
+def encounter():
+    print('''
+[==================================================================================================]
+        ''')
+    type_message(title + " " + opponent + " wants to battle!")
+    time.sleep(0.5)
+    type_message("Go, " + pokemon + "!")
+    time.sleep(0.5)
+    type_message("Pokémon Trainer " + rival + " sent out " + rivalpokemon + "!")
+    fightscreen()
+        
+def fightscreen():
+    print(pokemon + ": " + str(hp) + "/" + str(hp) + "HP")
+    print(opponentpokemon + ": " + str(hp) + "/" + str(hp) + "HP")
+    print('''What will you do?
+    (1) Fight
+    (2) Item
+    (3) Pokémon
+    (4) Run''')
+    fightinput = input(">>> ")
+    if rivalfightinput == "1":
+        print("Moves:")
+    elif fightinput == "2":
+        print("Bag:")
+        if bag == null:
+            print("Empty")
+    eliflfightinput == "3":
+        print("Pokémon:")
+        print(pokemon)
+    elif fightinput == "4":
+        type_message("Are you sure (y/n)")
+        runconfirm = input(">>> ")
+        if runconfirm == "y":
+            if battletype = "wild":
+                type_message("You ran away.")
+            if battletype = "trainer":
+                print("You cannot run from a trainer battle!")
+        if runconfirm == "n":
+            fighscreen()
+
+
+
 
 # Titlescreen
 def titlescreen():
@@ -141,7 +204,8 @@ def starterinput():
     
     
     
-            
+
+# Rival walks in            
 def rivalscene():
     type_message(rival + ":")
     type_message("\"Hey gramps, I'm here for that Pokémon that you were talking about.\"")
@@ -162,27 +226,16 @@ def rivalscene():
     
     
     
-    
+
+# Rival battles you    
 def rivalbattle():
-    print('''
-[==================================================================================================]
-        ''')
-    type_message("Pokémon Trainer " + rival + " wants to battle!")
-    time.sleep(0.5)
-    type_message("Go, " + pokemon + "!")
-    time.sleep(0.5)
-    type_message("Pokémon Trainer " + rival + " sent out " + rivalpokemon + "!")
-    print("")
-    type_message(pokemon + ": " + str(hp) + "/" + str(hp) + "HP")
-    type_message(rivalpokemon + ": " + str(hp) + "/" + str(hp) + "HP")
-    type_message("What will you do?")
-    type_message("(1) Fight")
-    type_message("(2) Item")
-    type_message("(3) Pokémon")
-    type_message("(4) Run")
-    rivalfightinput = input(">>> ")
+    opponent = rival
+    title = "Pokémon Trainer"
+    opponentpokemon = rivalpokemon
+    battletype = "trainer"
+    encounter()
     
-    
-    
-    
+        
+
+
 titlescreen()
