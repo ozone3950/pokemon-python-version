@@ -1,8 +1,8 @@
-?????????? = {
+MISSINGNO = {
     "dexnum": "000",
     "species": "??????????",
     "type": "999",
-    "evolvl": "N/A,
+    "evolvl": "N/A",
     "hp": 255,
     "atk":255,
     "def": 255,
@@ -80,8 +80,8 @@ Charmeleon = {
 Charizard = {
     "dexnum": "006",
     "species": "Flame",
-    "type": "Fire" "Flying"
-    "evolvl": "N?A"
+    "type": "Fire" "Flying",
+    "evolvl": "N/A",
     "hp": 78,
     "atk": 84,
     "def": 78,
@@ -117,7 +117,7 @@ Wartortle = {
 }
 
 Blastoise = {
-    "dexnum": "009"
+    "dexnum": "009",
     "species": "Shellfish",
     "type": "Water",
     "evolvl": "N/A",
