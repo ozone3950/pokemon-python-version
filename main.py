@@ -36,22 +36,21 @@ def fightscreen():
     (3) Pokémon
     (4) Run''')
     fightinput = input(">>> ")
-    if rivalfightinput == "1":
+    if fightinput == "1":
         print("Moves:")
     elif fightinput == "2":
         print("Bag:")
-        if bag == null:
-            print("Empty")
-    eliflfightinput == "3":
+        print(bag)
+    elif fightinput == "3":
         print("Pokémon:")
         print(pokemon)
     elif fightinput == "4":
         type_message("Are you sure (y/n)")
         runconfirm = input(">>> ")
         if runconfirm == "y":
-            if battletype = "wild":
+            if battletype == "wild":
                 type_message("You ran away.")
-            if battletype = "trainer":
+            if battletype == "trainer":
                 print("You cannot run from a trainer battle!")
         if runconfirm == "n":
             fighscreen()
@@ -211,6 +210,10 @@ def rivalscene():
 
 # Rival battles you
 def rivalbattle():
+    global opponent
+    global title
+    global opponentpokemon
+    global battletype
     opponent = rival
     title = "Pokémon Trainer"
     opponentpokemon = rivalpokemon
