@@ -18,7 +18,7 @@ Libraries of Pokémon with their stats, and libraries of moves will be included,
 # Characters
 
 
-### Ozone
+### Python
 Protagonist of the game with a very imaginative default name. (Can be renamed)
 
 
