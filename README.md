@@ -86,6 +86,15 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 ### Elite Four Smallant
 
 ### Elite Four Billie
+The second best Pokémon Trainer in the entire game with an insane flying type team and the successor to Lance.
+
+Team:
+- Togekiss (Level 54)
+- Articuno (Level 54)
+- Gyrados (Level 54)
+- Dragonite (Level 54)
+- Lugia (Level 54)
+
 
 ### Champion Ozone
 A Pokémon Trainer who's been training most of his life, to every region and brought that experience with him. He is me.
