@@ -35,7 +35,7 @@ The Water-Type Gym Leader of Cerulean City and the successor to Misty.
 ### Gym Leader Lt. Vincent
 The Electric-Type Gym Leader of Vermilion City and the successor to Brock.
 
-### Gym Leader Pending
+### Gym Leader Dan
 The Poison-Type Gym Leader of Fuchsia City and the successor to Koga.
 
 ### Gym Leader Pending
