@@ -45,7 +45,7 @@ The Water-Type Gym Leader of Cerulean City and the successor to Misty.
 
 
 ### Gym Leader Lt. Vincent
-The Electric-Type Gym Leader of Vermilion City and the successor to Brock.
+The Electric-Type Gym Leader of Vermilion City and the successor to Lt. Surge.
 
 Team:
 - Magnemite (Lv. 25)
