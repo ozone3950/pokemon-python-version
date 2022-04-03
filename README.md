@@ -91,18 +91,37 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 ### Elite Four Pending
 
 ### Elite Four Super
+In his eyes, every battle is winnable and every shatter is a big one. His Fighting/Rock-Type team shocks the opposition, as he is the successor of Bruno.
+
+Team:
+- Hitmonlee (Level 52)
+- Machamp (Level 52)
+- Terrakion (Level 52)
+- Rhyperior (Level 52)
+- Regirock (Level 53)
+
+
 
 ### Elite Four Smallant
+Insanely fast and an even more insane Ghost/Poison-Type team and likes flying to the moon and playing among the stars. Successor of Agatha.
+
+Team:
+- Crobat (Level 53)
+- Dawn Wings Necrozma (Level 53)
+- Nidoking (Level 53)
+- Gengar (Level 53)
+- Giratina (Level 54)
+
 
 ### Elite Four Billie
-The second best Pokémon Trainer in the entire game with an insane flying type team and the successor to Lance.
+The second best Pokémon Trainer (and best singer) in the entire game with an insane Flying-Type team and the successor to Lance.
 
 Team:
 - Togekiss (Level 54)
 - Articuno (Level 54)
 - Gyrados (Level 54)
 - Dragonite (Level 54)
-- Lugia (Level 54)
+- Lugia (Level 55)
 
 
 ### Champion Ozone
