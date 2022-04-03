@@ -17,37 +17,48 @@ Libraries of Pokémon with their stats, and libraries of moves will be included,
 
 # Characters
 
+
 ### Ozone
 Protagonist of the game with a very imaginative default name. (Can be renamed)
+
 
 ### Fred
 Ozone's rival, and Professor Oak's great grandson. (Can also be renamed)
 
+
 ### Professor Oak
 Same old professor from the original games, but he is literally very old now.
+
 
 ### Gym Leader Luis
 The Rock-Type Gym Leader of Pewter City and the successor to Brock.
 
+
 ### Gym Leader Fish
 The Water-Type Gym Leader of Cerulean City and the successor to Misty.
+
 
 ### Gym Leader Lt. Vincent
 The Electric-Type Gym Leader of Vermilion City and the successor to Brock.
 
+
 ### Gym Leader Dan
 The Poison-Type Gym Leader of Fuchsia City and the successor to Koga.
+
 
 ### Gym Leader Pending
 The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
 
+
 ### Gym Leader Alex
 The Fire-Type Gym Leader of Cinnabar Island and the successor to Blaine.
+
 Team:
 - Flareon (Lv. 47)
 - Moltres (Lv. 47)
 - Ninetails (Lv. 47)
 - Volcarona (Lv. 48)
+
 
 ### Gym Leader Quake
 The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
