@@ -46,7 +46,7 @@ The Electric-Type Gym Leader of Vermilion City and the successor to Brock.
 The Poison-Type Gym Leader of Fuchsia City and the successor to Koga.
 
 
-### Gym Leader Pending
+### Gym Leader Luke
 The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
 
 
