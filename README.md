@@ -100,3 +100,6 @@ Team:
 - Primal Kyogre (Level 56)
 - Mega Blaziken "Flame" (Level 57)
 
+
+
+### Side Characters: 
