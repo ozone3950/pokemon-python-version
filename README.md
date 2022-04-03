@@ -90,3 +90,13 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 ### Elite Four Billie
 
 ### Champion Ozone
+A Pokémon Trainer who's been training most of his life, to every region and brought that experience with him. He is me.
+
+Team: 
+- Metagross (Level 56)
+- Greninja (Level 56)
+- Charizard (Level 56)
+- Rayquaza (Level 56)
+- Primal Kyogre (Level 56)
+- Mega Blaziken "Flame" (Level 57)
+
