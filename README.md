@@ -79,14 +79,14 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 
 
-Elite Four:
+### Elite Four:
 
-# Elite Four 
+### Elite Four Pending
 
-# Elite Four Super
+### Elite Four Super
 
-# Elite Four Ant
+### Elite Four Ant
 
-# Elite Four Billie
+### Elite Four Billie
 
-# Champion Ozone
+### Champion Ozone
