@@ -85,7 +85,7 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 ### Elite Four Super
 
-### Elite Four Ant
+### Elite Four Smallant
 
 ### Elite Four Billie
 
