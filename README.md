@@ -43,6 +43,11 @@ The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
 
 ### Gym Leader Alex
 The Fire-Type Gym Leader of Cinnabar Island and the successor to Blaine.
+Team:
+- Flareon (Lv. 47)
+- Moltres (Lv. 47)
+- Ninetails (Lv. 47)
+- Volcarona (Lv. 48)
 
 ### Gym Leader Quake
 The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
