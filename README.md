@@ -29,7 +29,7 @@ Same old professor from the original games, but he is literally very old now.
 ### Gym Leader Luis
 The Rock-Type Gym Leader of Pewter City and the successor to Brock.
 
-### Gym Leader Pending
+### Gym Leader Fish
 The Water-Type Gym Leader of Cerulean City and the successor to Misty.
 
 ### Gym Leader Lt. Vincent
@@ -44,5 +44,5 @@ The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
 ### Gym Leader Alex
 The Fire-Type Gym Leader of Cinnabar Island and the successor to Blaine.
 
-### Gym Leader Pending
+### Gym Leader Quake
 The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
