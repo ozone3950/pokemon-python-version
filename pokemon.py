@@ -17,7 +17,7 @@ pokemonlib["??????????"] = {
 
 # Kanto Pokédex - Numbers 1 - 151
 pokemonlib["Bulbasaur"] = {
-z    "dexnum": "001",
+    "dexnum": "001",
     "species": "Seed",
     "type": "Grass",
     "evolvl": 16,
