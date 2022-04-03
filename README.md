@@ -17,11 +17,11 @@ Libraries of Pokémon with their stats, and libraries of moves will be included,
 
 # Characters
 
-### Ozone (Can be renamed)
-Protagonist of the game with a very imaginative default name.
+### Ozone
+Protagonist of the game with a very imaginative default name. (Can be renamed)
 
-### Fred (Can be renamed)
-Ozone's rival, and Professor Oak's great grandson.
+### Fred
+Ozone's rival, and Professor Oak's great grandson. (Can also be renamed)
 
 ### Professor Oak
 Same old professor from the original games, but he is literally very old now.
