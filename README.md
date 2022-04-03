@@ -11,3 +11,38 @@ I am developing a simple game based off of Pokémon in Python as a self-project 
 The game is a text-based, cut down version of the original Pokémon games, and will have aspects already included in the Pokémon titles, but will have original parts inspired by the same style. The game is set in the Kanto Region, but far enough in the future for the rival to be Professor Oak's grandson. 
 
 Libraries of Pokémon with their stats, and libraries of moves will be included, aswell as an actual story to progress though. Most of the battle mechanics will be the same, including stat changes, critical hits, and weaknesses. 
+
+
+
+
+# Characters
+
+### Ozone (Can be renamed)
+Protagonist of the game with a very imaginative default name.
+
+### Fred (Can be renamed)
+Ozone's rival, and Professor Oak's great grandson.
+
+### Professor Oak
+Same old professor from the original games, but he is literally very old now.
+
+### Gym Leader Luis
+The Rock-Type Gym Leader of Pewter City and the successor to Brock.
+
+### Gym Leader Pending
+The Water-Type Gym Leader of Cerulean City and the successor to Misty.
+
+### Gym Leader Lt. Vincent
+The Electric-Type Gym Leader of Vermilion City and the successor to Brock.
+
+### Gym Leader Pending
+The Poison-Type Gym Leader of Fuchsia City and the successor to Koga.
+
+### Gym Leader Pending
+The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
+
+### Gym Leader Alex
+The Fire-Type Gym Leader of Cinnabar Island and the successor to Blaine.
+
+### Gym Leader Pending
+The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
