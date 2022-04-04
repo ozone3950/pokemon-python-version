@@ -128,21 +128,37 @@ pokemonlib["Blastoise"] = {
 
 
 # Exotic Pokémon (152+)
-pokemonlib["Blaziken"] = {
+pokemonlib["Mega Blaziken"] = {
     "dexnum": "257",
     "species": "Blaze",
     "type": "Fire, Fighting",
     "evolvl": "N/A",
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
+    "hp": 80,
+    "atk": 145,
+    "def": 80,
+    "spd": 100,
     "move": "Blaze Kick"
     }
+
+pokemonlib["Primal Kyogre"] = {
+    "dexnum": 382,
+    "species": "Sea Basin",
+    "type": "Water",
+    "evolvl": "N/A",
+    "hp": 100,
+    "atk": 165,
+    "def": 125,
+    "spd": 90,
+    "move": "Origin Pulse"
+}
+
+
+
+
 '''
 Template
 
-Pokemon = {
+pokemonlib[""] = {
     "dexnum":
     "species": 
     "type": 
