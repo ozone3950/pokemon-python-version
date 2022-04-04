@@ -53,7 +53,7 @@ Team:
 - Zekrom (Lv. 26)
 
 
-# Gym Leader Lang
+### Gym Leader Lang
 The Grass-Type Gym Leader of Celadon City and the successor to Erika.
 
 
