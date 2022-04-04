@@ -148,6 +148,7 @@ Team:
 
 
 
-### Side Characters: 
+# Side Characters: 
 
+Ace Trainer Lucidra
 
