@@ -38,6 +38,8 @@ Same old professor from the original games, but he is literally very old now.
 
 ### Team Rocket Grunt
 
+### Team Rocket Admin Mobama
+
 ### Team Rocket Leader Lilene
 
 
@@ -66,6 +68,11 @@ Team:
 
 ### Gym Leader Lang
 The Grass-Type Gym Leader of Celadon City and the successor to Erika.
+
+Team:
+- Ivysaur (Lv. 33)
+- Executor (Lv. 33)
+- Roserade (Lv. 34)
 
 
 ### Gym Leader Dan
