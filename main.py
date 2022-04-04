@@ -76,48 +76,28 @@ def fightscreen():
         statcalculate(selectedpokemon, pokemonhp, pokemonlevel)
         type_message("Pokédex scanning...")
         time.sleep(0.5)
-        print("Your Pokémon:")
+        print("Selected Pokémon:")
         print(selectedpokemon + ", the " + pokemonlib[selectedpokemon]["species"] + " Pokémon")
-        print("Level: " + str(pokemonlevel))
-        print("Evolution Level: " + pokemonlib[selectedpokemon]["evolvl"])
-        print("Type: " + pokemonlib[selectedpokemon]["type"])
-        print("HP: " + battlehp)
-        print("Attack: " + battleatk)
-        print("Defence: " + battledef)
-        print("Speed: " + battlespd)
-        print("Move: " + pokemonlib[selectedpokemon]["move"])
-        print("")
-        statcalculate(opponentpokemon, opponenthp, opponentpokemonlevel)
-        print("Opponent's Pokémon:")
-        print(opponentpokemon + ", the " + pokemonlib[opponentpokemon]["species"] + " Pokémon")
-        print("Level: ", opponentpokemonlevel)
-        print("Evolution Level: " + pokemonlib[opponentpokemon]["evolvl"])
-        print("Type: " + pokemonlib[opponentpokemon]["type"])
-        print("HP: " + battlehp)
-        print("Attack: " + battleatk)
-        print("Defence: " + battledef)
-        print("Speed: " + battlespd)
-        print("Move: " + pokemonlib[opponentpokemon]["move"])
-        print("")
         returntobattle = input("Press start to return to battle")
         fightscreen()
     if fightinput == "3":
+        if battletype == "wild":
+            type_message("Are you sure (y/n)")
+            runconfirm = input(">>> ")
             if runconfirm == "y":
-                if battletype == "wild":
-                    type_message("Are you sure (y/n)")
-                    runconfirm = input(">>> ")
-                    if runconfirm == "y":
-                        type_message("You ran away.")
-                        time.sleep(0.5)
-                        print("")
-                        run()
-                    if runconfirm == "n":
-                        print("")
-                        fighscreen()
-                if battletype == "trainer":
-                    print("You cannot run from a trainer battle!")
-                    print("")
-                    fightscreen()
+                type_message("You ran away.")
+                time.sleep(0.5)
+                print('''
+
+                ''')
+                run()
+            if runconfirm == "n":
+                print("")
+                fighscreen()
+            if battletype == "trainer":
+                print("You cannot run from a trainer battle!")
+                print("")
+                fightscreen()
 
 
 
@@ -191,37 +171,31 @@ def textspeedmenu():
     if textspeedinput == "1":
         if textspeed == 0.05:
             type_message("Text speed is already set to slow.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
         else:
             textspeed = 0.05
             type_message("Text speed has been set to slow.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
     if textspeedinput == "2":
         if textspeed == 0.025:
             type_message("Text speed is already set to normal.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
         else:
             textspeed = 0.025
             type_message("Text speed has been set to normal.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
     if textspeedinput == "3":
         if textspeed == 0.001:
             type_message("Text speed is already set to fast.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
         else:
             textspeed = 0.001
             type_message("Text speed has been set to fast.")
-            time.sleep(0.5)
             print("")
             textspeedmenu()
     if textspeedinput == "4":
@@ -238,25 +212,21 @@ def debugmodemenu():
     if debugmodeinput == "1":
         if debugmode == True:
             type_message("Debug Mode is already turned on.")
-            time.sleep(0.5)
             print("")
             debugmodemenu()
         else:
             debugmode = True
             type_message("Debug Mode has been turned on.")
-            time.sleep(0.5)
             print("")
             debugmodemenu()
     if debugmodeinput == "2":
         if debugmode == True:
             debugmode = False
             type_message("Debug Mode has been turned off.")
-            time.sleep(0.5)
             print("")
             debugmodemenu()
         else:
             type_message("Debug Mode is already turned off.")
-            time.sleep(0.5)
             print("")
             debugmodemenu()
     if debugmodeinput == "3":
@@ -306,38 +276,157 @@ def intro():
     type_message("\"A world of dreams and adventures with Pokémon awaits! Let's go!\"")
     time.sleep(0.5)
     print("")
-    type_message("PRESS ENTER TO CONTINUE")
-    finish_intro = input("")
+    finish_intro = input("PRESS ENTER TO CONTINUE")
+    print('''
+
+    ''')
     house()
 
 
 
 
+# Player's house
 def house():
     print('''Location: Home, Pallet Town
-(1) Exit
+(1) Talk to Mum
+(2) Exit
     ''')
     houseinput()
 
 def houseinput():
-    global starterchosen
-    houseinput = input(">>> ")
-    if houseinput == "1":
-        if starterchosen == False:
-            starterselect()
+    houseoptioninput = input(">>> ")
+    if houseoptioninput == "1":
+        if starterchosen == True:
+            type_message("Mum:")
+            type_message("\"Hi " + name + ". It looks like you need a rest.\"")
+            time.sleep(0.5)
+            type_message("Your Pokémon have been healed!")
+            time.sleep(0.5)
+            houseinput()
         else:
-            pallettown()
+            type_message("Mum:")
+            type_message("\"Hi " + name + ", our new neighbour Professor Oak is looking for you.\"")
+            time.sleep(0.5)
+            houseinput()
+    if houseoptioninput == "2":
+        print('''
+
+        ''')
+        pallettown()
     else:
         houseinput()
 
 
 
 
-# Introduction to the starter Pokémon
-def starterselect():
-    print('''
+# Rival's house
+def rivalhouse():
+    print('''Location: ''' + rival + '''\'s House, Pallet Town
+(1) Talk to ''' + rival + '''\'s Mum
+(2) Exit
+    ''')
+    rivalhouseinput()
+
+def rivalhouseinput():
+    rivalhouseoptioninput = input(">>> ")
+    if rivalhouseoptioninput == "1":
+        if starterchosen == True:
+            type_message(rival + "'s Mum:")
+            type_message("\"Hey " + name + ". How is your's and " + rival + "'s adventure going!\"")
+            time.sleep(0.5)
+            rivalhouseinput()
+        else:
+            type_message(rival + "'s Mum:")
+            type_message("\"Hey " + name + ", welcome new neighbour!. " + rival + " is outside.\"")
+            time.sleep(0.5)
+            rivalhouseinput()
+    if rivalhouseoptioninput == "2":
+        print('''
 
         ''')
+        pallettown()
+    else:
+        rivalhouseinput()
+
+
+
+
+def pallettown():
+    print('''Location: Pallet Town
+(1) ''' + name + '''\'s House
+(2) ''' + rival + '''\'s House
+(3) Professor Oak's Lab
+(4) Route 1
+    ''')
+    pallettowninput()
+
+def pallettowninput():
+    pallettownoptioninput = input(">>> ")
+    if pallettownoptioninput == "1":
+        print('''
+
+        ''')
+        house()
+    if pallettownoptioninput == "2":
+        print('''
+
+        ''')
+        rivalhouse()
+    if pallettownoptioninput == "3":
+        if starterchosen == True:
+            print('''
+
+            ''')
+            lab()
+        else:
+            print('''
+
+            ''')
+            emptylab()
+    if pallettownoptioninput == "4":
+        if starterchosen == True:
+            print('''
+
+            ''')
+            route1()
+        else:
+            print('''
+
+            ''')
+            oakroute1()
+
+
+
+
+# Professor Oak stops you from going in the tall grass
+def oakroute1():
+    print('''Location: Route 1
+    ''')
+    type_message("Professor Oak:")
+    type_message("\"Hey! Wait! Don't go out!\"")
+    time.sleep(0.5)
+    type_message("...")
+    time.sleep(0.5)
+    type_message("\"It's unsafe! Wild Pokémon live in tall grass!\"")
+    time.sleep(0.5)
+    type_message("\"You need your own Pokémon for your protection.\"")
+    time.sleep(0.5)
+    type_message("\"I know! Here, come with me!\"")
+    time.sleep(0.5)
+    type_message("...")
+    time.sleep(0.5)
+    print("")
+    gotolab = input("PRESS ENTER TO CONTINUE")
+    print('''
+
+    ''')
+    starterselect()
+
+
+
+
+# Introduction to the starter Pokémon
+def starterselect():
     type_message("Professor Oak:")
     type_message("\"Hello again, " + name + ". You are ready to receive your first Pokémon.\"")
     time.sleep(0.5)
@@ -354,18 +443,12 @@ def starterselect():
     ''')
     starterinput()
 
-
-
-
-# Starter selection menu
 def starterinput():
-    global debugmode
     type_message("Please choose a Pokémon.")
     starterselect = input(">>> ")
-    global selectedpokemon, rivalpokemon
+    global debugmode, selectedpokemon, rivalpokemon
     if starterselect == "1":
         selectedpokemon = "Bulbasaur"
-        
         rivalpokemon = "Charmander"
     if starterselect == "2":
         selectedpokemon = "Charmander"
@@ -377,8 +460,6 @@ def starterinput():
         if starterselect == "debug123":
             selectedpokemon = "??????????"
             rivalpokemon = "Squirtle"
-    else:
-        starterinput()
     starterchosen = True
     type_message("Selected Pokémon: " + selectedpokemon)
     time.sleep(0.5)
@@ -393,7 +474,6 @@ def starterinput():
         type_message("Professor Oak:")
         type_message("\"Good choice, " + name + ". " + selectedpokemon + " will be a great partner.\"")
         rivalscene()
-        return
     if starterconfirm == "n":
         starterinput()
     else:
@@ -460,30 +540,10 @@ def rivalbattle():
     time.sleep(0.5)
     print("")
     exitlab = input("PRESS ENTER TO CONTINUE")
-    pallettown()
-
-def pallettown():
     print('''
-Location: Pallet Town
-(1) ''' + name + '''\'s House
-(2) ''' + rival + '''\'s House
-(3) Professor Oak's Lab
-(4) Route 1
+
     ''')
-
-def pallettowninput():
-    pallettowninput = input(">>> ")
-    if pallettowninput == "1":
-        print('''
-
-        ''')
-        house()
-    if pallettowninput == "2":
-        rivalhouse()
-    if pallettowninput == "3":
-        lab()
-    if pallettowninput == "4":
-        route101()
+    pallettown()
 
 
 
