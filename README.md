@@ -34,7 +34,18 @@ Same old professor from the original games, but he is literally very old now.
 
 
 
-# Gym Leaders: 
+# Team Rocket
+
+### Team Rocket Grunt
+
+### Team Rocket Leader Lilene
+
+
+
+
+
+
+### Gym Leaders: 
 
 ### Gym Leader Luis
 The Rock-Type Gym Leader of Pewter City and the successor to Brock.
@@ -138,3 +149,5 @@ Team:
 
 
 ### Side Characters: 
+
+
