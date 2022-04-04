@@ -19,7 +19,7 @@ pokemonlib["??????????"] = {
 pokemonlib["Bulbasaur"] = {
     "dexnum": "001",
     "species": "Seed",
-    "type": "Grass",
+    "type": "Grass, Poison",
     "evolvl": 16,
     "hp": 45,
     "atk": 57,
@@ -31,7 +31,7 @@ pokemonlib["Bulbasaur"] = {
 pokemonlib["Ivysaur"] = {
     "dexnum": "002",
     "species": "Seed",
-    "type": "Grass",
+    "type": "Grass, Poison",
     "evolvl": 32,
     "hp": 60,
     "atk": 71,
@@ -43,7 +43,7 @@ pokemonlib["Ivysaur"] = {
 pokemonlib["Venusaur"] = {
     "dexnum": "003",
     "species": "Seed",
-    "type": "Grass",
+    "type": "Grass, Poison",
     "evolvl": "N/A",
     "hp": 80,
     "atk": 91,
@@ -79,7 +79,7 @@ pokemonlib["Charmeleon"] = {
 pokemonlib["Charizard"] = {
     "dexnum": "006",
     "species": "Flame",
-    "type": "Fire",
+    "type": "Fire, Flying",
     "evolvl": "N/A",
     "hp": 78,
     "atk": 97,
@@ -127,9 +127,18 @@ pokemonlib["Blastoise"] = {
 
 
 
-
-
-
+# Exotic Pokémon (152+)
+pokemonlib["Blaziken"] = {
+    "dexnum": "257",
+    "species": "Blaze",
+    "type": "Fire, Fighting",
+    "evolvl": "N/A",
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move": "Blaze Kick"
+    }
 '''
 Template
 
