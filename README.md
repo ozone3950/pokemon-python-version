@@ -19,7 +19,7 @@ The game is a text-based, cut down version of the original Pokémon games, and w
 
 
 
-### Main Characters: 
+# Main Characters: 
 
 ### Python
 Protagonist of the game with a very imaginative default name. (Can be renamed)
@@ -45,7 +45,7 @@ Same old professor from the original games, but he is literally very old now.
 
 
 
-### Gym Leaders: 
+# Gym Leaders: 
 
 ### Gym Leader Luis
 The Rock-Type Gym Leader of Pewter City and the successor to Brock.
