@@ -1,3 +1,4 @@
+
 import time
 from pokemon import pokemonlib
 import random
@@ -12,8 +13,9 @@ def type_message(message):
     print()
     time.sleep(messagedelay)
 
-# Debug mode off by default
-debugmode = "off"
+# Starting perameters
+debugmode = True
+starterchosen = False
 
 
 
@@ -77,7 +79,7 @@ def fightscreen():
         time.sleep(0.5)
         print("Your Pokémon:")
         print(selectedpokemon + ", the " + pokemonlib[selectedpokemon]["species"] + " Pokémon")
-        print("Level: " + pokemonlevel)
+        print("Level: " + str(pokemonlevel))
         print("Evolution Level: " + pokemonlib[selectedpokemon]["evolvl"])
         print("Type: " + pokemonlib[selectedpokemon]["type"])
         print("HP: " + battlehp)
@@ -235,20 +237,20 @@ def debugmodemenu():
     global debugmode
     debugmodeinput = input(">>> ")
     if debugmodeinput == "1":
-        if debugmode == "on":
+        if debugmode == True:
             type_message("Debug Mode is already turned on.")
             time.sleep(0.5)
             print("")
             debugmodemenu()
         else:
-            debugmode = "on"
+            debugmode = True
             type_message("Debug Mode has been turned on.")
             time.sleep(0.5)
             print("")
             debugmodemenu()
     if debugmodeinput == "2":
-        if debugmode == "on":
-            debugmode = "off"
+        if debugmode == True:
+            debugmode = False
             type_message("Debug Mode has been turned off.")
             time.sleep(0.5)
             print("")
@@ -286,7 +288,7 @@ def intro():
     global name
     name = input(">>> ")
     if name == "":
-        name = "Ozone"
+        name = "Python"
     type_message("\"Right! So your name is " + name + "!\"")
     time.sleep(0.5)
     type_message("\"This is my great grandson. He's been your rival since you were a baby.\"")
@@ -307,13 +309,33 @@ def intro():
     print("")
     type_message("PRESS ENTER TO CONTINUE")
     finish_intro = input("")
-    starter()
+    house()
+
+
+
+
+def house():
+    print('''Location: Home, Pallet Town
+(1) Exit
+    ''')
+    houseinput()
+
+def houseinput():
+    global starterchosen
+    houseinput = input(">>> ")
+    if houseinput == "1":
+        if starterchosen == False:
+            starterselect()
+        else:
+            pallettown()
+    else:
+        houseinput()
 
 
 
 
 # Introduction to the starter Pokémon
-def starter():
+def starterselect():
     print('''
 
         ''')
@@ -327,9 +349,9 @@ def starter():
     type_message("\"" + name + ", these Pokémon are extremely rare. Please make your choice carefully.\"")
     time.sleep(0.5)
     print('''
-    (1) Bulbasaur, the Seed Pokémon
-    (2) Charmander, the Lizard Pokémon
-    (3) Squirtle, the Tiny Turtle Pokémon
+(1) Bulbasaur, the Seed Pokémon
+(2) Charmander, the Lizard Pokémon
+(3) Squirtle, the Tiny Turtle Pokémon
     ''')
     starterinput()
 
@@ -338,11 +360,13 @@ def starter():
 
 # Starter selection menu
 def starterinput():
+    global debugmode
     type_message("Please choose a Pokémon.")
     starterselect = input(">>> ")
     global selectedpokemon, rivalpokemon
     if starterselect == "1":
         selectedpokemon = "Bulbasaur"
+        
         rivalpokemon = "Charmander"
     if starterselect == "2":
         selectedpokemon = "Charmander"
@@ -350,10 +374,13 @@ def starterinput():
     if starterselect == "3":
         selectedpokemon = "Squirtle"
         rivalpokemon = "Bulbasaur"
-    if starterselect == "debug123":
-        selectedpokemon = "??????????"
-        rivalpokemon = "Squirtle"
-        
+    if debugmode == True:
+        if starterselect == "debug123":
+            selectedpokemon = "??????????"
+            rivalpokemon = "Squirtle"
+    else:
+        starterinput()
+    starterchosen = True
     type_message("Selected Pokémon: " + selectedpokemon)
     time.sleep(0.5)
     type_message("Are you sure you want to select this Pokémon? (y/n)")
@@ -370,10 +397,8 @@ def starterinput():
         return
     if starterconfirm == "n":
         starterinput()
-        return
     else:
         starterinput()
-        return
 
 
 
@@ -412,6 +437,54 @@ def rivalbattle():
     pokemonhp = 0
     opponenthp = 0
     encounter()
+    if battle == "win":
+        type_message(rival + ":")
+        type_message("\"No way you beat me...\"")
+        time.sleep(0.5)
+        type_message(rival + " has left the lab.")
+        type_message(0.5)
+        type_messave("Professor Oak:")
+        type_message("\"Well done " + name + "! Sorry about the attitude of my great grandson though.\"")
+        time.sleep(0.5)
+        type_message("\"Hopefully his Pokémon journey will change that for him.\"")
+    if battle == "lose":
+        type_message(rival + ":")
+        type_message("\"Haha, that was easy, see you around, " + name + ".\"")
+        time.sleep(0.5)
+        type_message(rival + " has left the lab.")
+        type_message("Professor Oak:")
+        type_message("\"Sorry about that " + name + ". Please don't mind the attitude of my great grandson though.\"")
+        timel.sleep(0.5)
+        type_message("\"Hopefully his Pokémon journey will change that for him.\"")
+    time.sleep(0.5)
+    type_message("...")
+    time.sleep(0.5)
+    print("")
+    exitlab = input("PRESS ENTER TO CONTINUE")
+    pallettown()
+
+def pallettown():
+    print('''
+Location: Pallet Town
+(1) ''' + name + '''\'s House
+(2) ''' + rival + '''\'s House
+(3) Professor Oak's Lab
+(4) Route 1
+    ''')
+
+def pallettowninput():
+    pallettowninput = input(">>> ")
+    if pallettowninput == "1":
+        print('''
+
+        ''')
+        house()
+    if pallettowninput == "2":
+        rivalhouse()
+    if pallettowninput == "3":
+        lab()
+    if pallettowninput == "4":
+        route101()
 
 
 
