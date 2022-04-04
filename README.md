@@ -61,7 +61,7 @@ The Electric-Type Gym Leader of Vermilion City and the successor to Lt. Surge.
 Team:
 - Magnemite (Lv. 25)
 - Electrode (Lv. 25)
-- Zekrom (Lv. 26)
+- Vikavolt (Lv. 26)
 
 
 ### Gym Leader Lang
@@ -76,7 +76,7 @@ The Poison-Type Gym Leader of Fuchsia City and the successor to Koga.
 The Psychic-Type Gym Leader of Saffron City and the successor to Sabrina.
 
 Team:
-- Mewtwo (Lv. 43)
+- Mr. Mime (Lv. 43)
 - Alakazam (Lv. 43)
 - Gengar (Lv. 43)
 - Gardevoir (Lv. 44)
@@ -87,7 +87,7 @@ The Fire-Type Gym Leader of Cinnabar Island and the successor to Blaine.
 
 Team:
 - Flareon (Lv. 47)
-- Moltres (Lv. 47)
+- Charizard (Lv. 47)
 - Ninetails (Lv. 47)
 - Volcarona (Lv. 48)
 
@@ -97,7 +97,7 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 
 
-### Elite Four:
+# Elite Four:
 
 ### Elite Four Pending
 
