@@ -1,4 +1,3 @@
-
 import time
 from pokemon import pokemonlib
 import random
@@ -14,7 +13,7 @@ def type_message(message):
     time.sleep(messagedelay)
 
 # Starting perameters
-debugmode = True
+debugmode = False
 starterchosen = False
 
 
