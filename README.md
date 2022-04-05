@@ -155,4 +155,9 @@ Team:
 
 # Side Characters:
 
+### Pokémon Researcher Joseph
+Maintains the labs and the legacy of Bill.
+
+
 ### Ace Trainer Lucidra
+A Pokémon Trainer on Victory Road.
