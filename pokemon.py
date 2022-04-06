@@ -127,7 +127,7 @@ pokemonlib["Blastoise"] = {
 
 
 
-pokemonlib[""] = {
+pokemonlib["Caterpie"] = {
     "dexnum": "010",
     "species": "Worm",
     "type": "Bug",
