@@ -127,6 +127,171 @@ pokemonlib["Blastoise"] = {
 
 
 
+pokemonlib[""] = {
+    "dexnum": "010",
+    "species": "Worm",
+    "type": "Bug",
+    "evolvl": 7
+    "hp": 45,
+    "atk": 25,
+    "def": 28,
+    "spd": 45,
+    "move": "Tackle"
+}
+
+
+
+
+pokemonlib["Metapod"] = {
+    "dexnum": "011",
+    "species": "Cocoon",
+    "type": "Bug",
+    "evolvl": 10,
+    "hp": 50,
+    "atk": 23,
+    "def": 40,
+    "spd": 30,
+    "move": "Tackle"
+}
+
+
+
+
+pokemonlib["Butterfree"] = {
+    "dexnum": "012",
+    "species": "Butterfly",
+    "type": "Bug, Flying",
+    "evolvl": "N/A"
+    "hp": 60,
+    "atk": 75,
+    "def": 65,
+    "spd": 70,
+    "move": "Gust"
+}
+
+
+
+
+pokemonlib["Weedle"] = {
+    "dexnum": "013",
+    "species": "Hairy Bug",
+    "type": "Bug, Poison",
+    "evolvl": 7,
+    "hp": 40,
+    "atk": 28,
+    "def": 25,
+    "spd": 50,
+    "move": "Poison Sting"
+}
+
+
+
+
+pokemonlib["Kakuna"] = {
+    "dexnum": "014",
+    "species": "Cocoon",
+    "type": "Bug, Poison",
+    "evolvl": 10,
+    "hp": 45,
+    "atk": 25,
+    "def": 38,
+    "spd": 35,
+    "move": "Bug Bite",
+}
+
+
+
+
+pokemonlib["Beedrill"] = {
+    "dexnum": "015",
+    "species": "Poison Bee",
+    "type": "Bug, Poison",
+    "evolvl": "N/A",
+    "hp": 65,
+    "atk": 68,
+    "def": 60,
+    "spd": 75,
+    "move": "Poison Sting"
+}
+
+
+
+
+pokemonlib["Pidgey"] = {
+    "dexnum": "016",
+    "species": "Tiny Bird"
+    "type": "Normal, Flying"
+    "evolvl": 18,
+    "hp": 40,
+    "atk": 40,
+    "def": 38,
+    "spd": 56,
+    "move": "Gust"
+}
+
+
+
+
+pokemonlib["Pidgeotto"] = {
+    "dexnum": "017",
+    "species": "Bird",
+    "type": "Normal, Flying",
+    "evolvl": 36,
+    "hp": 63,
+    "atk": 55,
+    "def": 53,
+    "spd": 71,
+    "move": "Wing Attack"
+}
+
+
+
+
+pokemonlib["Pidgeot"] = {
+    "dexnum": "019",
+    "species": "Bird",
+    "type": "Normal, Flying",
+    "evolvl": "N/A",
+    "hp": 83,
+    "atk": 75,
+    "def": 73,
+    "spd": 101,
+    "move": "Air Slash"
+}
+
+
+
+
+pokemonlib["Spearow"] = {
+    "dexnum": "020",
+    "species": "Tiny Bird",
+    "type": "Normal, Flying",
+    "evolvl": 20,
+    "hp": 40,
+    "atk": 46,
+    "def": 31,
+    "spd": 70,
+    "move": "Peck"
+}
+
+
+
+
+pokemonlib["Fearow"] = {
+    "dexnum": "020",
+    "species": "Beak",
+    "type": "Normal, Flying",
+    "evolvl": "N/A",
+    "hp": 65,
+    "atk": 76,
+    "def": 63,
+    "spd": 100,
+    "move": "Drill Peck"
+}
+
+
+
+
 # Exotic Pokémon (152+)
 pokemonlib["Mega Blaziken"] = {
     "dexnum": "257",
@@ -139,6 +304,9 @@ pokemonlib["Mega Blaziken"] = {
     "spd": 100,
     "move": "Blaze Kick"
     }
+
+
+
 
 pokemonlib["Primal Kyogre"] = {
     "dexnum": 382,
