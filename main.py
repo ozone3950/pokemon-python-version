@@ -2,6 +2,9 @@ import time
 from pokemon import pokemonlib
 import random
 
+
+
+
 # The "type_message" function
 textspeed = 0.025
 messagedelay = 0.5
@@ -12,9 +15,14 @@ def type_message(message):
     print()
     time.sleep(messagedelay)
 
+    
+    
+    
 # Starting perameters
 debugmode = False
 starterchosen = False
+location = "Pallet Town"
+destination = "null"
 
 
 
@@ -45,7 +53,7 @@ def pokemonattack(chosenpokemon, chosenhp, chosenlevel):
 
 
 # Encounter text at the start of the battle
-def encounter():
+def trainerencounter():
     print('''
 
         ''')
@@ -351,6 +359,7 @@ def rivalhouseinput():
 
 
 
+# Pallet Town
 def pallettown():
     print('''Location: Pallet Town
 (1) ''' + name + '''\'s House
@@ -515,7 +524,7 @@ def rivalbattle():
     battletype = "trainer"
     pokemonhp = 0
     opponenthp = 0
-    encounter()
+    trainerencounter()
     if battle == "win":
         type_message(rival + ":")
         type_message("\"No way you beat me...\"")
@@ -544,6 +553,49 @@ def rivalbattle():
 
     ''')
     pallettown()
+
+
+
+
+# Route 1
+def route1():
+    if location == "Pallet Town":
+        locationfunc = pallettown()
+        destinationfunc = viridiancity()
+        destination = "Viridian City"
+    if location == "Viridian City":
+        locationfunc = viridiancity()
+        destinationfunc = pallettown()
+        destination = "Pallet Town"
+    if location == "Pallet Town":
+        print('''Location: Route 1
+(1) Walk through tall grass to ''' + destination + '''
+(2) Back to ''' + location
+        )
+        route1input()
+
+def route1input():
+    route1optioninput = input(">>> ")
+    if route1optioninput == "1":
+        if random.randint(0,3) > 1:
+            wildpokemon = ["Rattata", "Pidgey"]
+            wildencounter()
+            print('''
+
+            ''')
+            type_message("You walked to " + destination + " safely.")
+            time.sleep(0.5)
+            destinationfunc
+        else:
+            type_message("You walked to " + destination + " safely.")
+            time.sleep(0.5)
+            destinationfunc()
+    if route1optioninput == "2":
+        type_message("You walked back to " + location + ".")
+        time.sleep(0.5)
+        locationfunc()
+    else:
+        route1input()
 
 
 
