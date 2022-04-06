@@ -28,7 +28,7 @@ destination = "null"
 
 
 # Pokémon stat calculation
-def statcalculate(chosenpokemon, chosenhp, chosenlevel):
+def statcalculate(chosenpokemon, chosenlevel):
     global battlehp, battleatk, battledef, battlespd
     battlehp = 0.01 * (2 * pokemonlib[chosenpokemon]["hp"] * chosenlevel) + chosenlevel + 10
     battlehp = round(battlehp)
@@ -43,11 +43,13 @@ def statcalculate(chosenpokemon, chosenhp, chosenlevel):
 
 
 # Attack damage calculation
-def pokemonattack(chosenpokemon, chosenhp, chosenlevel):
-    statcalculate(chosenpokemon, chosenhp, chosenlevel)
-    attackdamage = 0.2 * chosenpokemon[atk]
+def attackcalculate(chosenpokemon, chosenlevel, targetpokemon, targetlevel):
+    statcalculate(chosenpokemon, chosenlevel)
+    attackdmg = 0.2 * battleatk
     if random.randint(0, 100) < 16:
-        attackdamage = attackdamage * 2    
+        attackdmg = attackdmg * 2
+    statcalculate(targetpokemon, targetlevel)
+    attackedhp = battlehp + battledef - attackdamage
 
 
 
@@ -62,10 +64,7 @@ def trainerencounter():
     type_message("Go, " + selectedpokemon + "!")
     time.sleep(0.5)
     type_message("Pokémon Trainer " + rival + " sent out " + opponentpokemon + "!")
-    statcalculate(selectedpokemon, pokemonhp, pokemonlevel)
-    print(selectedpokemon + ": " + str(battlehp) + "/" + str(battlehp) + "HP")
-    statcalculate(opponentpokemon, opponenthp, opponentpokemonlevel)
-    print(opponentpokemon + ": " + str(battlehp) + "/" + str(battlehp) + "HP")
+    time.sleep(0.5)
     fightscreen()
 
 
@@ -73,13 +72,32 @@ def trainerencounter():
 
 # Fight screen menu
 def fightscreen():
+    statcalculate(selectedpokemon, pokemonlevel)
+    pokemonhp = battlehp
+    originalpokemonhp = battlehp
+    pokemonspd = battlespd
+    print(selectedpokemon + " (Lv. " + pokemonlevel + ")" + ": " + str(pokemonhp) + "/" + str(originalpokemonhp) + "HP")
+    statcalculate(opponentpokemon, opponentpokemonlevel)
+    opponentpokemonhp = battlehp
+    originalopponentpokemonhp = battlehp
+    opponentpokemonspd = battlespd
+    print(opponentpokemon + " (Lv. " + opponentpokemonlevel + ")" + ": " + str(opponentpokemonhp) + "/" + str(originalopponentpokemonhp) + "HP")
     print('''What will you do?
     (1) Fight
     (2) Pokémon
     (3) Run''')
     fightinput = input(">>> ")
     if fightinput == "1":
-        type_
+        if pokemonspd > opponentpokemonspd:
+            type_message(selectedpokemon + " used " + pokemonlib[selectedpokemon][move] + "!")
+            damagecalculate(selectedpokemon, pokemonlevel, opponentpokemon, opponentpokemonlevel)
+            opponentpokemonhp = attackedhp
+            time.sleep(0.5)
+            type_message(selectedpokemon + " used " + pokemonlib[selectedpokemon][move] + "!")
+            damagecalculate(opponentpokemon, opponentpokemonlevel, selectedpokemon, pokemonlevel)
+            pokemonhp = attackedhp
+            time.sleep(0.5)
+            fightscreen()
     if fightinput == "2":
         statcalculate(selectedpokemon, pokemonhp, pokemonlevel)
         type_message("Pokédex scanning...")
@@ -522,8 +540,6 @@ def rivalbattle():
     opponentpokemon = rivalpokemon
     opponentpokemonlevel = rivalpokemonlevel
     battletype = "trainer"
-    pokemonhp = 0
-    opponenthp = 0
     trainerencounter()
     if battle == "win":
         type_message(rival + ":")
