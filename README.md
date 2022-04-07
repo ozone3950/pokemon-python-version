@@ -17,9 +17,10 @@ Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at
 
 # Characters
 
-# Main Characters:
+## Main Characters:
 
-### Python
+### Python:
+
 Protagonist of the game with a very imaginative default name. (Can be renamed)
 
 
@@ -33,7 +34,7 @@ Same old professor from the original games, but he is literally very old now.
 
 
 
-# Gym Leaders:
+## Gym Leaders:
 
 ### Gym Leader Luis
 The Rock-Type Gym Leader of Pewter City and the successor to Brock.
@@ -91,7 +92,7 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 
 
-# Elite Four:
+## Elite Four:
 
 ### Elite Four Pending
 
@@ -143,7 +144,7 @@ Team:
 
 
 
-# Team Rocket
+## Team Rocket
 
 ### Team Rocket Grunt
 
@@ -156,7 +157,7 @@ Team:
 
 
 
-# Side Characters:
+## Side Characters:
 
 ### Pokémon Researcher Joseph
 Maintains the labs and the legacy of Bill.
