@@ -9,6 +9,9 @@ I am developing a simple game based off of Pokémon in Python as a self-project 
 ### Info
 The game is a text-based, cut down version of the original Pokémon games, and will have aspects already included in the Pokémon titles, but will have original parts inspired by the same style. The game is set in the Kanto Region, but far enough in the future for the rival to be Professor Oak's grandson.
 
+### Credits
+Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at Python and the rest of all of my friends for being characters in this game.
+
 
 
 
@@ -161,10 +164,3 @@ Maintains the labs and the legacy of Bill.
 
 ### Ace Trainer Lucidra
 A Pokémon Trainer on Victory Road.
-
-
-
-
-# Credits
-
-Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at Python and the rest of all of my friends for being characters in this game.
