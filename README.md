@@ -161,3 +161,10 @@ Maintains the labs and the legacy of Bill.
 
 ### Ace Trainer Lucidra
 A Pokémon Trainer on Victory Road.
+
+
+
+
+# Credits
+
+Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at Python and the rest of all of my friends for being characters in this game.
