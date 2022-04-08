@@ -1,6 +1,8 @@
 pokemonlib = {}
 
 
+
+
 # MissingNo.
 pokemonlib["??????????"] = {
     "dexnum": "000",
@@ -15,7 +17,8 @@ pokemonlib["??????????"] = {
     }
 
 
-# Kanto Pokédex - Numbers 1 - 151
+
+
 pokemonlib["Bulbasaur"] = {
     "dexnum": "001",
     "species": "Seed",
@@ -27,6 +30,9 @@ pokemonlib["Bulbasaur"] = {
     "spd": 45,
     "move": "Vine Whip"
 }
+
+
+
 
 pokemonlib["Ivysaur"] = {
     "dexnum": "002",
@@ -40,6 +46,9 @@ pokemonlib["Ivysaur"] = {
     "move": "Razor Leaf"
 }
 
+
+
+
 pokemonlib["Venusaur"] = {
     "dexnum": "003",
     "species": "Seed",
@@ -51,6 +60,9 @@ pokemonlib["Venusaur"] = {
     "spd": 80,
     "move": "Solar Beam"
 }
+
+
+
 
 pokemonlib["Charmander"] = {
     "dexnum": "004",
@@ -64,6 +76,9 @@ pokemonlib["Charmander"] = {
     "move": "Ember"
 }
 
+
+
+
 pokemonlib["Charmeleon"] = {
     "dexnum": "005",
     "species": "Flame",
@@ -75,6 +90,9 @@ pokemonlib["Charmeleon"] = {
     "spd": 80,
     "move": "Flamethrower"
 }
+
+
+
 
 pokemonlib["Charizard"] = {
     "dexnum": "006",
@@ -88,6 +106,9 @@ pokemonlib["Charizard"] = {
     "move": "Flare Blitz"
 }
 
+
+
+
 pokemonlib["Squirtle"] = {
     "dexnum": "007",
     "species": "Tiny Turtle",
@@ -100,6 +121,9 @@ pokemonlib["Squirtle"] = {
     "move": "Water Gun"
 }
 
+
+
+
 pokemonlib["Wartortle"] = {
     "dexnum": "008",
     "species": "Turtle",
@@ -111,6 +135,9 @@ pokemonlib["Wartortle"] = {
     "spd": 58,
     "move": "Water Pulse"
 }
+
+
+
 
 pokemonlib["Blastoise"] = {
     "dexnum": "009",
@@ -292,7 +319,51 @@ pokemonlib["Fearow"] = {
 
 
 
-# Exotic Pokémon (152+)
+pokemonlib["Magnemite"] = {
+    "dexnum": "081",
+    "species": "Magnet",
+    "type": "Electric, Steel",
+    "evolvl": 30,
+    "hp": 25,
+    "atk": 65,
+    "def": 63,
+    "spd": 45,
+    "move": "Spark"
+}
+
+
+
+
+pokemonlib["Electrode"] = {
+    "dexnum": "101",
+    "species": "Ball",
+    "type": "Electric",
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 65,
+    "def": 75,
+    "spd": 150,
+    "move": "Electro Ball"
+}
+
+
+
+
+pokemonlib["Exeggcute"] = {
+    "dexnum": "102",
+    "species": "Egg",
+    "type": "Grass, Psychic",
+    "evolvl": "N/A (Leaf Stone)",
+    "hp": 60,
+    "atk": 50,
+    "def": 63,
+    "spd": 40,
+    "move": "Confusion"
+}
+
+
+
+
 pokemonlib["Mega Blaziken"] = {
     "dexnum": "257",
     "species": "Blaze",
@@ -308,6 +379,21 @@ pokemonlib["Mega Blaziken"] = {
 
 
 
+pokemonlib["Gardevoir"] = {
+    "dexnum": "282",
+    "species": "Embrace",
+    "type": "Psychic, Fairy",
+    "evolvl": "N/A",
+    "hp": 68,
+    "atk": 95,
+    "def": 90,
+    "spd": 80,
+    "move": "Dazzling Gleam"
+}
+
+
+
+
 pokemonlib["Primal Kyogre"] = {
     "dexnum": 382,
     "species": "Sea Basin",
@@ -318,6 +404,81 @@ pokemonlib["Primal Kyogre"] = {
     "def": 125,
     "spd": 90,
     "move": "Origin Pulse"
+}
+
+
+
+
+pokemonlib["Rayquaza"] = {
+    "dexnum": "384",
+    "species": "Sky High",
+    "type": "Dragon, Flying",
+    "evolvl": "N/A",
+    "hp": 105,
+    "atk": 150,
+    "def": 90,
+    "spd": 95,
+    "move": "Dragon Ascent",
+}
+
+
+
+
+pokemonlib["Infernape"] = {
+    "dexnum": "392",
+    "species": "Flame",
+    "type": "Fire, Fighting",
+    "evolvl": "N/A",
+    "hp": 76,
+    "atk": 104,
+    "def": 71,
+    "spd": 108,
+    "move": "Flame Wheel"
+}
+
+
+
+
+pokemonlib["Roserade"] = {
+    "dexnum": "407",
+    "species": "Bouquet",
+    "type": "Grass, Poison",
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 98,
+    "def": 85,
+    "spd": 90,
+    "move": "Petal Dance"
+}
+
+
+
+
+pokemonlib["Greninja"] = {
+    "dexnum": "658",
+    "species": "Ninja",
+    "type": "Water, Dark",
+    "evolvl": "N/A",
+    "hp": 72,
+    "atk": 99,
+    "def": 69,
+    "spd": 122,
+    "move": "Water Shuriken"
+}
+
+
+
+
+pokemonlib["Vikavolt"] = {
+    "dexnum": "738",
+    "species": "Stag Beetle",
+    "type": "Bug, Electric",
+    "evolvl": "N/A",
+    "hp": 77,
+    "atk": 108,
+    "def": 83,
+    "spd": 43, 
+    "move": "Zap Cannon"
 }
 
 
