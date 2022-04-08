@@ -154,6 +154,9 @@ Team:
 
 # Side Characters:
 
+### Bug Catcher Pending
+
+
 ### Pokémon Researcher Joseph
 Maintains the labs and the legacy of Bill.
 
