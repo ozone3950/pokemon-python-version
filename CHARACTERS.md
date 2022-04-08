@@ -45,7 +45,7 @@ The Grass-Type Gym Leader of Celadon City and the successor to Erika.
 
 Team:
 - Ivysaur (Lv. 33)
-- Execute (Lv. 33)
+- Exeggcute (Lv. 33)
 - Roserade (Lv. 34)
 
 
