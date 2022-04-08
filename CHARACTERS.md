@@ -103,7 +103,7 @@ Team:
 - Regirock (Level 53)
 
 
-### Elite Four Smallant
+### Elite Four Ant
 Insanely fast and an even more insane Ground-Type team and likes flying to the moon and playing among the stars.
 
 Team:
