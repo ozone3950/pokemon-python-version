@@ -85,7 +85,7 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 
 ### Elite Four Super
-In his eyes, every battle is winnable and every shatter is a big one. His Fighting/Rock-Type team shocks the opposition, as he is the successor of Bruno.
+In his eyes, every battle is winnable and every shatter is a big one. His Fighting/Rock-Type team shocks the opposition.
 
 Team:
 - Hitmonlee (Level 52)
@@ -96,7 +96,7 @@ Team:
 
 
 ### Elite Four Smallant
-Insanely fast and an even more insane Ghost/Poison-Type team and likes flying to the moon and playing among the stars. Successor of Agatha.
+Insanely fast and an even more insane Ghost/Poison-Type team and likes flying to the moon and playing among the stars.
 
 Team:
 - Quagsire (Level 53)
@@ -107,7 +107,7 @@ Team:
 
 
 ### Elite Four Billie
-The second best Pokémon Trainer (and best singer) in the entire game with an insane Ghost/Poison Type team and the successor to Lance.
+The second best Pokémon Trainer (and best singer) in the entire game with an insane Ghost/Poison Type team.
 
 Team:
 - Crobat (Level 54)
@@ -118,7 +118,7 @@ Team:
 
 
 ### Champion Ozone
-A Pokémon Trainer who's been training most of his life, to every region and brought that experience with him. He is me.
+A Pokémon Trainer who's been training most of his life, to every region and brought that experience with him.
 
 Team:
 - Infernape (Level 56)
