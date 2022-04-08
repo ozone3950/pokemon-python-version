@@ -81,7 +81,8 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 
 # Elite Four:
 
-### Elite Four Pending
+### Elite Four Jennifer
+Survived several bloodsport events and known as the "Girl on Fire" with her amazing team of that type.
 
 
 ### Elite Four Super
