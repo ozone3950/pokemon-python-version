@@ -99,22 +99,22 @@ Team:
 Insanely fast and an even more insane Ghost/Poison-Type team and likes flying to the moon and playing among the stars. Successor of Agatha.
 
 Team:
-- Crobat (Level 53)
-- Dawn Wings Necrozma (Level 53)
+- Quagsire (Level 53)
+- Steelix (Level 53)
 - Nidoking (Level 53)
-- Gengar (Level 53)
-- Giratina (Level 54)
+- Flygon (Level 53)
+- Garchomp (Level 54)
 
 
 ### Elite Four Billie
-The second best Pokémon Trainer (and best singer) in the entire game with an insane Flying-Type team and the successor to Lance.
+The second best Pokémon Trainer (and best singer) in the entire game with an insane Ghost/Poison Type team and the successor to Lance.
 
 Team:
-- Togekiss (Level 54)
-- Articuno (Level 54)
-- Gyrados (Level 54)
-- Dragonite (Level 54)
-- Lugia (Level 55)
+- Crobat (Level 54)
+- Salazzle (Level 54)
+- Banette (Level 54)
+- Nidoqueen (Level 54)
+- Gengar (Level 55)
 
 
 ### Champion Ozone
@@ -126,7 +126,7 @@ Team:
 - Charizard (Level 56)
 - Rayquaza (Level 56)
 - Primal Kyogre (Level 56)
-- Mega Blaziken "Flame" (Level 57)
+- Flame [Mega Blaziken] (Level 57)
 
 
 
