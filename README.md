@@ -1,4 +1,3 @@
-
 # Pokémon Python Version
 
 ## About
@@ -9,5 +8,6 @@ The game is a text-based, cut down version of the original Pokémon games, and w
 
 ## Special Thanks 
 Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at Python and the rest of all of my friends for being characters in this game.
+
 
 ![Untitled21_20220408095930](https://user-images.githubusercontent.com/91910634/162423705-9b48c48b-a907-41ff-85bb-2f612afdd304.png)
