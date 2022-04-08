@@ -84,6 +84,13 @@ The Ground-Type Gym Leader of Viridian City and the successor to Giovanni.
 ### Elite Four Jennifer
 Survived several bloodsport events and known as the "Girl on Fire" with her amazing team of that type.
 
+Team:
+- Skarmory (Lv. 51)
+- Magmortar (Lv. 51)
+- Ninetales (Lv. 51)
+- Togekiss (Lv. 51)
+- Talonflame (Lv. 52)
+
 
 ### Elite Four Super
 In his eyes, every battle is winnable and every shatter is a big one. His Fighting/Rock-Type team shocks the opposition.
@@ -97,7 +104,7 @@ Team:
 
 
 ### Elite Four Smallant
-Insanely fast and an even more insane Ghost/Poison-Type team and likes flying to the moon and playing among the stars.
+Insanely fast and an even more insane Ground-Type team and likes flying to the moon and playing among the stars.
 
 Team:
 - Quagsire (Level 53)
