@@ -20,6 +20,7 @@ Thanks to [Quake](https://thefakequake.vercel.app/) for helping me get better at
 
 
 
+
 ##### Wallpaper (JAP)
 ![Wallpaper (JAP)](https://user-images.githubusercontent.com/91910634/162567765-c985d30e-41e9-4173-a0c0-7e7e1af56574.png)
 
