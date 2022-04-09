@@ -275,7 +275,7 @@ pokemonlib["Pidgeotto"] = {
 
 
 pokemonlib["Pidgeot"] = {
-    "dexnum": "019",
+    "dexnum": "018",
     "species": "Bird",
     "type": "Normal, Flying",
     "evolvl": "N/A",
@@ -290,7 +290,7 @@ pokemonlib["Pidgeot"] = {
 
 
 pokemonlib["Spearow"] = {
-    "dexnum": "020",
+    "dexnum": "021",
     "species": "Tiny Bird",
     "type": "Normal, Flying",
     "evolvl": 20,
@@ -305,7 +305,7 @@ pokemonlib["Spearow"] = {
 
 
 pokemonlib["Fearow"] = {
-    "dexnum": "020",
+    "dexnum": "022",
     "species": "Beak",
     "type": "Normal, Flying",
     "evolvl": "N/A",
@@ -314,6 +314,36 @@ pokemonlib["Fearow"] = {
     "def": 63,
     "spd": 100,
     "move": "Drill Peck"
+}
+
+
+
+
+pokemonlib["Ninetails"] = {
+    "dexnum": "038",
+    "species": "Fox",
+    "type": "Fire",
+    "evolvl": "N/A",
+    "hp": 73,
+    "atk": 79,
+    "def": 88,
+    "spd": 100,
+    "move": "Inferno",
+}
+
+
+
+
+pokemonlib["Alakazam"] = {
+    "dexnum": "065",
+    "species": "Psi",
+    "type": "Psychic",
+    "evolvl": "N/A",
+    "hp": "55",
+    "atk": 93,
+    "def": 70,
+    "spd": 120,
+    "move": "Psychic"
 }
 
 
@@ -329,6 +359,21 @@ pokemonlib["Magnemite"] = {
     "def": 63,
     "spd": 45,
     "move": "Spark"
+}
+
+
+
+
+pokemonlib["Gengar"] = {
+    "dexnum": "094",
+    "species": "Shadow",
+    "type": "Ghost, Poison",
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 98,
+    "def": 68,
+    "spd": 110,
+    "move": "Night Shade"
 }
 
 
@@ -359,6 +404,51 @@ pokemonlib["Exeggcute"] = {
     "def": 63,
     "spd": 40,
     "move": "Confusion"
+}
+
+
+
+
+pokemonlib["Mr. Mime"] = {
+    "dexnum": "122",
+    "species": "Barrier",
+    "type": "Psychic, Fairy",
+    "evolvl": "N/A",
+    "hp": 40,
+    "atk": 73,
+    "def": 93,
+    "spd": 90,
+    "move": "Psybeam"
+}
+
+
+
+
+pokemonlib["Flareon"] = {
+    "dexnum": "136",
+    "species": "Flame",
+    "type": "Fire",
+    "evolvl": "N/A",
+    "hp": 65,
+    "atk": 113,
+    "def": 85,
+    "spd": 65,
+    "move": "Fire Fang"
+}
+
+
+
+
+pokemonlib["Skarmory"] = {
+    "dexnum": "227",
+    "species": "Armour Bird",
+    "type": "Steel",
+    "evolvl": "Flying",
+    "hp": 65,
+    "atk": 60,
+    "def": 105,
+    "spd": 70,
+    "move": "Steel Wing"
 }
 
 
@@ -454,6 +544,52 @@ pokemonlib["Roserade"] = {
 
 
 
+pokemonlib["Magmortar"] = {
+    "dexnum": "467",
+    "species": "Blast",
+    "type": "Fire",
+    "evolvl": "N/A",
+    "hp": 75,
+    "atk": 110,
+    "def": 81,
+    "spd": 83,
+    "move": "Fire Blast",
+}
+
+
+
+
+pokemonlib["Togekiss"] = {
+    "dexnum": "468",
+    "species": "Jubilee",
+    "type": "Fairy, Flying",
+    "evolvl": "N/A",
+    "hp": 85,
+    "atk": 85,
+    "def": 105,
+    "spd": 80,
+    "move": "Fairy Wind"
+}
+
+
+
+
+
+pokemonlib["Volcarona"] = {
+    "dexnum": "637",
+    "species": "Sun",
+    "type": "Bug, Fire",
+    "evolvl": "N/A",
+    "hp": 85,
+    "atk": 98,
+    "def": 85,
+    "spd": 100,
+    "move": "Flame Charge"
+}
+
+
+
+
 pokemonlib["Greninja"] = {
     "dexnum": "658",
     "species": "Ninja",
@@ -465,6 +601,22 @@ pokemonlib["Greninja"] = {
     "spd": 122,
     "move": "Water Shuriken"
 }
+
+
+
+
+pokemonlib["Talonflame"] = {
+    "dexnum": "663",
+    "species": "Scorching",
+    "type": "Fire, Flying",
+    "evolvl": "N/A",
+    "hp": 78,
+    "atk": 78,
+    "def": 72,
+    "spd": 126,
+    "move": "Brave Bird"
+}
+
 
 
 
