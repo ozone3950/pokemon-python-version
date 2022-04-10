@@ -294,11 +294,11 @@ pokemonlib["Rattata"] = {
     "species": "Mouse",
     "type": "Normal",
     "evolvl": 20,
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "hp": 30,
+    "atk": 41,
+    "def": 35,
+    "spd": 72,
+    "move": "Quick Attack"
 }
 
 
@@ -308,12 +308,12 @@ pokemonlib["Raticate"] = {
     "dexnum": "020",
     "species": "Mouse",
     "type": "Normal",
-    "evolvl": 
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "evolvl": "N/A",
+    "hp": 55,
+    "atk": 66,
+    "def": 65,
+    "spd": 97,
+    "move": "Super Fang"
 }
 
 
@@ -353,12 +353,12 @@ pokemonlib["Ekans"] = {
     "dexnum": "023",
     "species": "Snake",
     "type": "Poison",
-    "evolvl": 
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "evolvl": 22,
+    "hp": 35,
+    "atk": 50,
+    "def": 49,
+    "spd": 55,
+    "move": "Poison Sting"
 }
 
 
@@ -368,12 +368,12 @@ pokemonlib["Arbok"] = {
     "dexnum": "024",
     "species": "Arbok"
     "type": "Poison"
-    "evolvl": 
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 80,
+    "def": 74,
+    "spd": 80,
+    "move": "Sludge Bomb"
 }
 
 
@@ -384,11 +384,11 @@ pokemonlib["Pikachu"] = {
     "species": "Mouse",
     "type": "Electric",
     "evolvl": "N/A (Thunder Stone)",
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "hp": 35,
+    "atk": 53,
+    "def": 45,
+    "spd": 90,
+    "move": "Thunderbolt"
 }
 
 
@@ -398,11 +398,11 @@ pokemonlib["Raichu"] = {
     "species": "Mouse",
     "type": "Electric"
     "evolvl": "N/A"
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "hp": 60,
+    "atk": 90,
+    "def": 73,
+    "spd": 110,
+    "move": "Thunder"
 }
 
 
