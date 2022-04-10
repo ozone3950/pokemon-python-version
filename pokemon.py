@@ -3,18 +3,17 @@ pokemonlib = {}
 
 
 
-# MissingNo.
 pokemonlib["??????????"] = {
     "dexnum": "000",
     "species": "??????????",
-    "type": "999",
-    "evolvl": "N/A",
+    "type": "??????????",
+    "evolvl": "??????????",
     "hp": 255,
     "atk":255,
     "def": 255,
     "spd": 255,
     "move": "??????????"
-    }
+}
 
 
 
@@ -22,7 +21,7 @@ pokemonlib["??????????"] = {
 pokemonlib["Bulbasaur"] = {
     "dexnum": "001",
     "species": "Seed",
-    "type": "Grass, Poison",
+    "type": "Grass/Poison",
     "evolvl": 16,
     "hp": 45,
     "atk": 57,
@@ -37,7 +36,7 @@ pokemonlib["Bulbasaur"] = {
 pokemonlib["Ivysaur"] = {
     "dexnum": "002",
     "species": "Seed",
-    "type": "Grass, Poison",
+    "type": "Grass/Poison",
     "evolvl": 32,
     "hp": 60,
     "atk": 71,
@@ -52,7 +51,7 @@ pokemonlib["Ivysaur"] = {
 pokemonlib["Venusaur"] = {
     "dexnum": "003",
     "species": "Seed",
-    "type": "Grass, Poison",
+    "type": "Grass/Poison",
     "evolvl": "N/A",
     "hp": 80,
     "atk": 91,
@@ -97,7 +96,7 @@ pokemonlib["Charmeleon"] = {
 pokemonlib["Charizard"] = {
     "dexnum": "006",
     "species": "Flame",
-    "type": "Fire, Flying",
+    "type": "Fire/Flying",
     "evolvl": "N/A",
     "hp": 78,
     "atk": 97,
@@ -187,7 +186,7 @@ pokemonlib["Metapod"] = {
 pokemonlib["Butterfree"] = {
     "dexnum": "012",
     "species": "Butterfly",
-    "type": "Bug, Flying",
+    "type": "Bug/Flying",
     "evolvl": "N/A"
     "hp": 60,
     "atk": 75,
@@ -202,7 +201,7 @@ pokemonlib["Butterfree"] = {
 pokemonlib["Weedle"] = {
     "dexnum": "013",
     "species": "Hairy Bug",
-    "type": "Bug, Poison",
+    "type": "Bug/Poison",
     "evolvl": 7,
     "hp": 40,
     "atk": 28,
@@ -217,7 +216,7 @@ pokemonlib["Weedle"] = {
 pokemonlib["Kakuna"] = {
     "dexnum": "014",
     "species": "Cocoon",
-    "type": "Bug, Poison",
+    "type": "Bug/Poison",
     "evolvl": 10,
     "hp": 45,
     "atk": 25,
@@ -232,7 +231,7 @@ pokemonlib["Kakuna"] = {
 pokemonlib["Beedrill"] = {
     "dexnum": "015",
     "species": "Poison Bee",
-    "type": "Bug, Poison",
+    "type": "Bug/Poison",
     "evolvl": "N/A",
     "hp": 65,
     "atk": 68,
@@ -247,7 +246,7 @@ pokemonlib["Beedrill"] = {
 pokemonlib["Pidgey"] = {
     "dexnum": "016",
     "species": "Tiny Bird"
-    "type": "Normal, Flying"
+    "type": "Normal/Flying"
     "evolvl": 18,
     "hp": 40,
     "atk": 40,
@@ -262,7 +261,7 @@ pokemonlib["Pidgey"] = {
 pokemonlib["Pidgeotto"] = {
     "dexnum": "017",
     "species": "Bird",
-    "type": "Normal, Flying",
+    "type": "Normal/Flying",
     "evolvl": 36,
     "hp": 63,
     "atk": 55,
@@ -277,7 +276,7 @@ pokemonlib["Pidgeotto"] = {
 pokemonlib["Pidgeot"] = {
     "dexnum": "018",
     "species": "Bird",
-    "type": "Normal, Flying",
+    "type": "Normal/Flying",
     "evolvl": "N/A",
     "hp": 83,
     "atk": 75,
@@ -322,7 +321,7 @@ pokemonlib["Raticate"] = {
 pokemonlib["Spearow"] = {
     "dexnum": "021",
     "species": "Tiny Bird",
-    "type": "Normal, Flying",
+    "type": "Normal/Flying",
     "evolvl": 20,
     "hp": 40,
     "atk": 46,
@@ -337,7 +336,7 @@ pokemonlib["Spearow"] = {
 pokemonlib["Fearow"] = {
     "dexnum": "022",
     "species": "Beak",
-    "type": "Normal, Flying",
+    "type": "Normal/Flying",
     "evolvl": "N/A",
     "hp": 65,
     "atk": 76,
@@ -437,11 +436,25 @@ pokemonlib["Alakazam"] = {
 
 
 
+pokemonlib["Machamp"] = {
+    "dexnum": "068",
+    "species": "Superpower",
+    "type": "Fighting",
+    "evolvl": "N/A",
+    "hp": 90,
+    "atk": 98,
+    "def": 83,
+    "spd": 55,
+    "move": "Brick Break"
+}
+
+
+
 
 pokemonlib["Magnemite"] = {
     "dexnum": "081",
     "species": "Magnet",
-    "type": "Electric, Steel",
+    "type": "Electric/Steel",
     "evolvl": 30,
     "hp": 25,
     "atk": 65,
@@ -456,7 +469,7 @@ pokemonlib["Magnemite"] = {
 pokemonlib["Gengar"] = {
     "dexnum": "094",
     "species": "Shadow",
-    "type": "Ghost, Poison",
+    "type": "Ghost/Poison",
     "evolvl": "N/A",
     "hp": 60,
     "atk": 98,
@@ -486,7 +499,7 @@ pokemonlib["Electrode"] = {
 pokemonlib["Exeggcute"] = {
     "dexnum": "102",
     "species": "Egg",
-    "type": "Grass, Psychic",
+    "type": "Grass/Psychic",
     "evolvl": "N/A (Leaf Stone)",
     "hp": 60,
     "atk": 50,
@@ -497,11 +510,25 @@ pokemonlib["Exeggcute"] = {
 
 
 
+pokemonlib["Hitmonlee"] = {
+    "dexnum": "106",
+    "species": "Kicking",
+    "type": "Fighting",
+    "evolvl": "N/A",
+    "hp": 50,
+    "atk": 78,
+    "def": 82,
+    "spd": 87,
+    "move": "Low Kick"
+}
+
+
+
 
 pokemonlib["Mr. Mime"] = {
     "dexnum": "122",
     "species": "Barrier",
-    "type": "Psychic, Fairy",
+    "type": "Psychic/Fairy",
     "evolvl": "N/A",
     "hp": 40,
     "atk": 73,
@@ -527,6 +554,34 @@ pokemonlib["Flareon"] = {
 
 
 
+pokemonlib["Quagsire"] = {
+    "dexnum": "195",
+    "species": "Water Fish",
+    "type": "Water/Ground",
+    "evolvl": "N/A",
+    "hp": 95,
+    "atk": 75,
+    "def": 75,
+    "spd": 35,
+    "move": "Muddy Water"
+}
+
+
+
+pokemonlib["Steelix"] = {
+    "dexnum": "208",
+    "species": "Iron Snake",
+    "type": "Steel/Ground",
+    "evolvl": 
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
 
 pokemonlib["Skarmory"] = {
     "dexnum": "227",
@@ -546,7 +601,7 @@ pokemonlib["Skarmory"] = {
 pokemonlib["Mega Blaziken"] = {
     "dexnum": "257",
     "species": "Blaze",
-    "type": "Fire, Fighting",
+    "type": "Fire/Fighting",
     "evolvl": "N/A",
     "hp": 80,
     "atk": 145,
@@ -561,13 +616,27 @@ pokemonlib["Mega Blaziken"] = {
 pokemonlib["Gardevoir"] = {
     "dexnum": "282",
     "species": "Embrace",
-    "type": "Psychic, Fairy",
+    "type": "Psychic/Fairy",
     "evolvl": "N/A",
     "hp": 68,
     "atk": 95,
     "def": 90,
     "spd": 80,
     "move": "Dazzling Gleam"
+}
+
+
+
+pokemonlib["Medicham"] = {
+    "dexnum": "308",
+    "species": "Meditate",
+    "type": "Fighting/Psychic",
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 60,
+    "def": 75,
+    "spd": 80,
+    "move": "High Jump Kick"
 }
 
 
@@ -591,7 +660,7 @@ pokemonlib["Primal Kyogre"] = {
 pokemonlib["Rayquaza"] = {
     "dexnum": "384",
     "species": "Sky High",
-    "type": "Dragon, Flying",
+    "type": "Dragon/Flying",
     "evolvl": "N/A",
     "hp": 105,
     "atk": 150,
@@ -606,7 +675,7 @@ pokemonlib["Rayquaza"] = {
 pokemonlib["Infernape"] = {
     "dexnum": "392",
     "species": "Flame",
-    "type": "Fire, Fighting",
+    "type": "Fire/Fighting",
     "evolvl": "N/A",
     "hp": 76,
     "atk": 104,
@@ -621,13 +690,43 @@ pokemonlib["Infernape"] = {
 pokemonlib["Roserade"] = {
     "dexnum": "407",
     "species": "Bouquet",
-    "type": "Grass, Poison",
+    "type": "Grass/Poison",
     "evolvl": "N/A",
     "hp": 60,
     "atk": 98,
     "def": 85,
     "spd": 90,
     "move": "Petal Dance"
+}
+
+
+
+
+pokemonlib["Bastiodon"] = {
+    "dexnum": "411",
+    "species": "Sheild",
+    "type": "Rock/Steel",
+    "evolvl": "N/A",
+    "hp": 60,
+    "atk": 50,
+    "def": 153,
+    "spd": 30,
+    "move": "Heavy Slam"
+}
+
+
+
+
+pokemonlib["Rhyperior"] = {
+    "dexnum": "464",
+    "species": "Drill",
+    "type": "Ground/Rock",
+    "evolvl": "N/A",
+    "hp": 115,
+    "atk": 98,
+    "def": 93,
+    "spd": 40,
+    "move": "Bulldoze"
 }
 
 
@@ -651,7 +750,7 @@ pokemonlib["Magmortar"] = {
 pokemonlib["Togekiss"] = {
     "dexnum": "468",
     "species": "Jubilee",
-    "type": "Fairy, Flying",
+    "type": "Fairy/Flying",
     "evolvl": "N/A",
     "hp": 85,
     "atk": 85,
@@ -667,7 +766,7 @@ pokemonlib["Togekiss"] = {
 pokemonlib["Volcarona"] = {
     "dexnum": "637",
     "species": "Sun",
-    "type": "Bug, Fire",
+    "type": "Bug/Fire",
     "evolvl": "N/A",
     "hp": 85,
     "atk": 98,
@@ -682,7 +781,7 @@ pokemonlib["Volcarona"] = {
 pokemonlib["Greninja"] = {
     "dexnum": "658",
     "species": "Ninja",
-    "type": "Water, Dark",
+    "type": "Water/Dark",
     "evolvl": "N/A",
     "hp": 72,
     "atk": 99,
@@ -697,7 +796,7 @@ pokemonlib["Greninja"] = {
 pokemonlib["Talonflame"] = {
     "dexnum": "663",
     "species": "Scorching",
-    "type": "Fire, Flying",
+    "type": "Fire/Flying",
     "evolvl": "N/A",
     "hp": 78,
     "atk": 78,
@@ -713,7 +812,7 @@ pokemonlib["Talonflame"] = {
 pokemonlib["Vikavolt"] = {
     "dexnum": "738",
     "species": "Stag Beetle",
-    "type": "Bug, Electric",
+    "type": "Bug/Electric",
     "evolvl": "N/A",
     "hp": 77,
     "atk": 108,
