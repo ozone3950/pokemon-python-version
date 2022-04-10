@@ -289,6 +289,36 @@ pokemonlib["Pidgeot"] = {
 
 
 
+pokemonlib["Rattata"] = {
+    "dexnum": "019",
+    "species": "Mouse",
+    "type": "Normal",
+    "evolvl": 20,
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
+
+pokemonlib["Raticate"] = {
+    "dexnum": "020",
+    "species": "Mouse",
+    "type": "Normal",
+    "evolvl": 
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
+
 pokemonlib["Spearow"] = {
     "dexnum": "021",
     "species": "Tiny Bird",
@@ -314,6 +344,65 @@ pokemonlib["Fearow"] = {
     "def": 63,
     "spd": 100,
     "move": "Drill Peck"
+}
+
+
+
+
+pokemonlib["Ekans"] = {
+    "dexnum": "023",
+    "species": "Snake",
+    "type": "Poison",
+    "evolvl": 
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
+
+pokemonlib["Arbok"] = {
+    "dexnum": "024",
+    "species": "Arbok"
+    "type": "Poison"
+    "evolvl": 
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
+
+pokemonlib["Pikachu"] = {
+    "dexnum": "025",
+    "species": "Mouse",
+    "type": "Electric",
+    "evolvl": "N/A (Thunder Stone)",
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
+}
+
+
+
+pokemonlib["Raichu"] = {
+    "dexnum": "026",
+    "species": "Mouse",
+    "type": "Electric"
+    "evolvl": "N/A"
+    "hp": 
+    "atk": 
+    "def": 
+    "spd":
+    "move":
 }
 
 
