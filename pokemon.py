@@ -407,6 +407,36 @@ pokemonlib["Raichu"] = {
 
 
 
+pokemonlib["Nidoqueen"] = {
+    "dexnum": "031",
+    "species": "Drill",
+    "type": "Poison/Ground",
+    "evolvl": "N/A",
+    "hp": 90,
+    "atk": 84,
+    "def": 86,
+    "spd": 76,
+    "move": "Sludge Wave"
+}
+
+
+
+
+pokemonlib["Nidoking"] = {
+    "dexnum": "034",
+    "species": "Drill",
+    "type": "Poison/Ground",
+    "evolvl": "N/A",
+    "hp": 81,
+    "atk": 94,
+    "def": 76,
+    "spd": 85,
+    "move": "Megahorn"
+}
+
+
+
+
 pokemonlib["Ninetails"] = {
     "dexnum": "038",
     "species": "Fox",
@@ -554,6 +584,7 @@ pokemonlib["Flareon"] = {
 
 
 
+
 pokemonlib["Quagsire"] = {
     "dexnum": "195",
     "species": "Water Fish",
@@ -568,16 +599,32 @@ pokemonlib["Quagsire"] = {
 
 
 
+
+pokemonlib["Crobat"] = {
+    "dexnum": "169",
+    "species": "Bat",
+    "type": "Poison, Flying",
+    "evolvl": "N/A",
+    "hp": 85,
+    "atk": 80,
+    "def": 80,
+    "spd": 130,
+    "move": "Cross Poison"
+}
+
+
+
+
 pokemonlib["Steelix"] = {
     "dexnum": "208",
     "species": "Iron Snake",
     "type": "Steel/Ground",
-    "evolvl": 
-    "hp": 
-    "atk": 
-    "def": 
-    "spd":
-    "move":
+    "evolvl": "N/A",
+    "hp": 75,
+    "atk": 70,
+    "def": 133,
+    "spd": 30,
+    "move": "Iron Tail"
 }
 
 
@@ -637,6 +684,36 @@ pokemonlib["Medicham"] = {
     "def": 75,
     "spd": 80,
     "move": "High Jump Kick"
+}
+
+
+
+
+pokemonlib["Flygon"] = {
+    "dexnum": "330",
+    "species": "Mystic",
+    "type": "Ground/Dragon",
+    "evolvl": "N/A",
+    "hp": 80,
+    "atk": 90,
+    "def": 80,
+    "spd": 100,
+    "move": "Dragon Claw"
+}
+
+
+
+
+pokemonlib["Banette"] = {
+    "dexnum": "354",
+    "species": "Marionette",
+    "type": "Ghost",
+    "evolvl": "N/A",
+    "hp": 64,
+    "atk": 99,
+    "def": 64,
+    "spd": 65,
+    "move": "Hex"
 }
 
 
@@ -712,6 +789,21 @@ pokemonlib["Bastiodon"] = {
     "def": 153,
     "spd": 30,
     "move": "Heavy Slam"
+}
+
+
+
+
+pokemonlib["Garchomp"] = {
+    "dexnum": "445",
+    "species": "Mach",
+    "type": "Dragon/Ground",
+    "evolvl": "N/A",
+    "hp": 108,
+    "atk": 105,
+    "def": 90,
+    "spd": 102,
+    "move": "Dragon Rush"
 }
 
 
@@ -819,6 +911,21 @@ pokemonlib["Vikavolt"] = {
     "def": 83,
     "spd": 43, 
     "move": "Zap Cannon"
+}
+
+
+
+
+pokemonlib["Salazzle"] = {
+    "dexnum": "758",
+    "species": "Toxic Lizard",
+    "type": "Poison/Fire",
+    "evolvl": "N/A",
+    "hp": 68,
+    "atk": 88,
+    "def": 60,
+    "spd": 117,
+    "move": "Fire Lash"
 }
 
 
