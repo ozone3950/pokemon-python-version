@@ -98,9 +98,9 @@ In his eyes, every battle is winnable and every shatter is a big one. His Fighti
 Team:
 - Hitmonlee (Level 52)
 - Machamp (Level 52)
-- Terrakion (Level 52)
+- Medicham (Level 52)
 - Rhyperior (Level 52)
-- Regirock (Level 53)
+- Bastiodon (Level 53)
 
 
 ### Elite Four Ant
