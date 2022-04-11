@@ -407,6 +407,66 @@ pokemonlib["Raichu"] = {
 
 
 
+pokemonlib["Sandshrew"] = {
+    "dexnum": "027",
+    "species": "Mouse",
+    "type": "Ground",
+    "evolvl": 22,
+    "hp": 50,
+    "atk": 48,
+    "def": 58,
+    "spd": 40,
+    "move": "Scratch"
+}
+
+
+
+
+pokemonlib["Sandslash"] = {
+    "dexnum": "028",
+    "species": "Mouse"
+    "type": "Ground",
+    "evolvl": "N/A",
+    "hp": 75,
+    "atk": 73,
+    "def": 83,
+    "spd": 65,
+    "move": "Slash"
+}
+
+
+
+
+pokemonlib["Nidoran♀"] = {
+    "dexnum": "029",
+    "species": "Poison Pin",
+    "type": "Poison",
+    "evolvl": 16,
+    "hp": 55,
+    "atk": 44,
+    "def": 46,
+    "spd": 41,
+    "move": "Poison Sting"
+}
+
+
+
+
+pokemonlib["Nidorina"] = {
+    "dexnum": "030",
+    "species": "Poison Pin",
+    "type": "Poison",
+    "evolvl": "N/A (Moon Stone)",
+    "hp": 70,
+    "atk": 59,
+    "def": 61,
+    "spd": 56,
+    "move": "Poison Fang"
+}
+
+
+
+
 pokemonlib["Nidoqueen"] = {
     "dexnum": "031",
     "species": "Drill",
@@ -417,6 +477,36 @@ pokemonlib["Nidoqueen"] = {
     "def": 86,
     "spd": 76,
     "move": "Sludge Wave"
+}
+
+
+
+
+pokemonlib["Nidoran♂"] = {
+    "dexnum": "032",
+    "species": "Poison Pin",
+    "type": "Poison",
+    "evolvl": 16,
+    "hp": 46,
+    "atk": 49,
+    "def": 40,
+    "spd": 50,
+    "move": "Peck"
+}
+
+
+
+
+pokemonlib["Nidorino"] = {
+    "dexnum": "033",
+    "species": "Poison Pin",
+    "type": "Poison",
+    "evolvl": "N/A (Moon Stone)",
+    "hp": 61,
+    "atk": 64,
+    "def": 56,
+    "spd": 65,
+    "move": "Poison Jab"
 }
 
 
