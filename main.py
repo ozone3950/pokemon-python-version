@@ -43,19 +43,52 @@ def statcalculate(chosenpokemon, chosenlevel):
 
 
 # Attack damage calculation
-def attackcalculate(chosenpokemon, chosenlevel, targetpokemon, targetlevel):
+def damagecalculate(chosenpokemon, chosenlevel, targetpokemon, targetlevel):
+    global attackdamage, crit
+    crit = False
     statcalculate(chosenpokemon, chosenlevel)
-    attackdmg = 0.2 * battleatk
+    attackdamage = 0.2 * battleatk
+    round(attackdamage)
     if random.randint(0, 100) < 16:
-        attackdmg = attackdmg * 2
-    statcalculate(targetpokemon, targetlevel)
-    attackedhp = battlehp + battledef - attackdamage
+        attackdamage = attackdamage * 2
+        crit = True
+
+
+
+def attack(firstpokemon, firstpokemonlevel, firstpokemonhp, secondpokemon, secondpokemonlevel, secondpokemonhp):
+    type_message(firstpokemon + " used " + pokemonlib[firstpokemon]["move"] + "!")
+    damagecalculate(firstpokemon, firstpokemonlevel, secondpokemon, secondpokemonlevel)
+    secondpokemonhp = secondpokemonhp - attackdamage
+    time.sleep(0.5)
+    if crit == True:
+        type_message("A critical hit!")
+        time.sleep(0.5)
+
+
+
+        
+def faintcheck():
+    if opponentpokemonhp <= 0:
+        print("")
+        if battletype == "trainer":
+            type_message("Opponent's " + opponentpokemon + " has fainted!")
+        if battletype == "wild":
+            type_message("Wild " + opponentpokemon + " has fainted!")
+        battleoutcome = "win"
+        battlefinish()
+    if selectedpokemonhp <= 0:
+        print("")
+        type_message(selectedpokemon + " has fainted")
+        battleoutcome = "lose"
+        battlefinish()
 
 
 
 
 # Encounter text at the start of the battle
 def trainerencounter():
+    global attacked, selectedpokemonspd, opponentpokemonspd
+    attacked = False
     print('''
 
         ''')
@@ -65,6 +98,16 @@ def trainerencounter():
     time.sleep(0.5)
     type_message("Pokémon Trainer " + rival + " sent out " + opponentpokemon + "!")
     time.sleep(0.5)
+    statcalculate(selectedpokemon, selectedpokemonlevel)
+    selectedpokemonhp = battlehp
+    originalselectedpokemonhp = battlehp
+    selectedpokemonspd = battlespd
+    print(selectedpokemon + " (Lv. " + str(selectedpokemonlevel) + ")" + ": " + str(selectedpokemonhp) + "/" + str(originalselectedpokemonhp) + "HP")
+    statcalculate(opponentpokemon, opponentpokemonlevel)
+    opponentpokemonhp = battlehp
+    originalopponentpokemonhp = battlehp
+    opponentpokemonspd = battlespd
+    print(opponentpokemon + " (Lv. " + str(opponentpokemonlevel) + ")" + ": " + str(opponentpokemonhp) + "/" + str(originalopponentpokemonhp) + "HP")
     fightscreen()
 
 
@@ -72,39 +115,53 @@ def trainerencounter():
 
 # Fight screen menu
 def fightscreen():
-    statcalculate(selectedpokemon, pokemonlevel)
-    pokemonhp = battlehp
-    originalpokemonhp = battlehp
-    pokemonspd = battlespd
-    print(selectedpokemon + " (Lv. " + pokemonlevel + ")" + ": " + str(pokemonhp) + "/" + str(originalpokemonhp) + "HP")
-    statcalculate(opponentpokemon, opponentpokemonlevel)
-    opponentpokemonhp = battlehp
-    originalopponentpokemonhp = battlehp
-    opponentpokemonspd = battlespd
-    print(opponentpokemon + " (Lv. " + opponentpokemonlevel + ")" + ": " + str(opponentpokemonhp) + "/" + str(originalopponentpokemonhp) + "HP")
+    global attacked
+    if attacked == True:
+        print(selectedpokemon + " (Lv. " + str(selectedpokemonlevel) + ")" + ": " + str(selectedpokemonhp) + "/" + str(originalselectedpokemonhp) + "HP")
+        print(opponentpokemon + " (Lv. " + str(opponentpokemonlevel) + ")" + ": " + str(opponentpokemonhp) + "/" + str(originalopponentpokemonhp) + "HP")
     print('''What will you do?
     (1) Fight
     (2) Pokémon
     (3) Run''')
     fightinput = input(">>> ")
     if fightinput == "1":
-        if pokemonspd > opponentpokemonspd:
-            type_message(selectedpokemon + " used " + pokemonlib[selectedpokemon][move] + "!")
-            damagecalculate(selectedpokemon, pokemonlevel, opponentpokemon, opponentpokemonlevel)
-            opponentpokemonhp = attackedhp
-            time.sleep(0.5)
-            type_message(selectedpokemon + " used " + pokemonlib[selectedpokemon][move] + "!")
-            damagecalculate(opponentpokemon, opponentpokemonlevel, selectedpokemon, pokemonlevel)
-            pokemonhp = attackedhp
-            time.sleep(0.5)
+        attacked = True
+        if selectedpokemonspd > opponentpokemonspd:
+            attack(selectedpokemon, selectedpokemonlevel, selectedpokemonhp, opponentpokemon, opponentpokemonlevel, opponentpokemonhp)
+            opponentpokemonhp = secondpokemonhp
+            faintcheck()
+            attack(opponentpokemon, opponentpokemonlevel, opponentpokemonhp, selectedpokemon, selectedpokemonlevel, selectedpokemonhp)
+            selectedpokemonhp = secondpokemonhp
+            faintcheck()
             fightscreen()
+        if selectedpokemonspd < opponentpokemonspd:
+            attack(opponentpokemon, opponentpokemonlevel, opponentpokemonhp, selectedpokemon, selectedpokemonlevel, selectedpokemonhp)
+            faintcheck()
+            selectedpokemonhp = secondpokemonhp
+            attack(selectedpokemon, selectedpokemonlevel, selectedpokemonhp, opponentpokemon, opponentpokemonlevel, opponentpokemonhp)
+            opponentpokemonhp = secondpokemonhp
+            faintcheck()
+            fightscreen()
+        else:
+            if random.randint(1, 2) < 1:
+                attack(selectedpokemon, selectedpokemonlevel, selectedpokemonhp, opponentpokemon, opponentpokemonlevel, opponentpokemonhp)
+                faintcheck()
+                attack(opponentpokemon, opponentpokemonlevel, opponentpokemonhp, selectedpokemon, selectedpokemonlevel, selectedpokemonhp)
+                faintcheck()
+                fightscreen()
+            else:
+                attack(opponentpokemon, opponentpokemonlevel, opponentpokemonhp, selectedpokemon, selectedpokemonlevel, selectedpokemonhp)
+                faintcheck()
+                attack(selectedpokemon, selectedpokemonlevel, selectedpokemonhp, opponentpokemon, opponentpokemonlevel, opponentpokemonhp)
+                faintcheck()
+                fightscreen()
     if fightinput == "2":
         statcalculate(selectedpokemon, pokemonhp, pokemonlevel)
-        type_message("Pokédex scanning...")
-        time.sleep(0.5)
         print("Selected Pokémon:")
         print(selectedpokemon + ", the " + pokemonlib[selectedpokemon]["species"] + " Pokémon")
+        print("")
         returntobattle = input("Press start to return to battle")
+        print("")
         fightscreen()
     if fightinput == "3":
         if battletype == "wild":
@@ -124,6 +181,11 @@ def fightscreen():
                 print("You cannot run from a trainer battle!")
                 print("")
                 fightscreen()
+
+def battlefinish():
+    if battleoutcome == "win":
+        type_message("You defeated " + title + " " + opponent + "!")
+    
 
 
 
@@ -493,10 +555,10 @@ def starterinput():
     type_message("Are you sure you want to select this Pokémon? (y/n)")
     starterconfirm = input(">>> ")
     if starterconfirm == "y":
-        global pokemonlevel, rivalpokemonlevel
-        pokemonlevel, rivalpokemonlevel = 5, 5
+        global selectedpokemonlevel, rivalpokemonlevel
+        selectedpokemonlevel, rivalpokemonlevel = 5, 5
         if selectedpokemon == "??????????":
-            pokemonlevel = 100
+            selectedpokemonlevel = 100
         type_message("You recieved " + selectedpokemon + "!")
         type_message("Professor Oak:")
         type_message("\"Good choice, " + name + ". " + selectedpokemon + " will be a great partner.\"")
@@ -534,14 +596,15 @@ def rivalscene():
 
 # First rival battle
 def rivalbattle():
-    global opponent, title, opponentpokemon, opponentpokemonlevel, battletype, pokemonhp, opponenthp
+    global rivalbattle, opponent, title, opponentpokemon, opponentpokemonlevel, battletype, pokemonhp, opponenthp
+    battle = "rivalbattle"
     opponent = rival
     title = "Pokémon Trainer"
     opponentpokemon = rivalpokemon
     opponentpokemonlevel = rivalpokemonlevel
     battletype = "trainer"
     trainerencounter()
-    if battle == "win":
+    if battleoutcome == "win":
         type_message(rival + ":")
         type_message("\"No way you beat me...\"")
         time.sleep(0.5)
@@ -551,7 +614,7 @@ def rivalbattle():
         type_message("\"Well done " + name + "! Sorry about the attitude of my great grandson though.\"")
         time.sleep(0.5)
         type_message("\"Hopefully his Pokémon journey will change that for him.\"")
-    if battle == "lose":
+    if battleoutcome == "lose":
         type_message(rival + ":")
         type_message("\"Haha, that was easy, see you around, " + name + ".\"")
         time.sleep(0.5)
